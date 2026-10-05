@@ -106,9 +106,9 @@ done_bss2:
 	bl	debug_output
 	@ take the plunge
 	mov	r0, r4
-	bl	_main
+	blx	_main
 	@ _main returned! Go to whatever address it returned...
-	mov	pc, r0
+	bx	r0
 
 .pool
 

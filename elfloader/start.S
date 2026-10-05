@@ -96,7 +96,7 @@ done_bss:
 	@ _main returned! Go to whatever address it returned...
 	mov	r1, r0
 	mov	r0, r4
-	mov	pc, r1
+	bx	r1
 
 .pool
 
